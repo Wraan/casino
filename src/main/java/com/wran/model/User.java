@@ -1,9 +1,6 @@
 package com.wran.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Lob;
-import javax.persistence.Table;
+import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Email;
@@ -15,6 +12,8 @@ public class User {
 
 	@Id
 	@NotBlank
+	@GeneratedValue(strategy = GenerationType.AUTO, generator = "activities_seq_gen")
+	@SequenceGenerator(name="activities_seq_gen", sequenceName = "ACTIVITIES_SEQ")
 	private String login;
 
 	@NotBlank

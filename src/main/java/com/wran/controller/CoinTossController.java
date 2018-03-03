@@ -3,6 +3,7 @@ package com.wran.controller;
 import javax.servlet.http.HttpSession;
 
 import com.wran.model.User;
+import com.wran.service.ActivityService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,6 +22,9 @@ public class CoinTossController {
 	
 	@Autowired
 	UserService userService;
+
+	@Autowired
+	ActivityService activityService;
 	
 	@RequestMapping(value="/coinToss", method=RequestMethod.GET)
 	public String showCoinToss(Model model) {
@@ -36,10 +40,12 @@ public class CoinTossController {
 			
 			if(result.equals(choice)){
 				user = userService.addCoins(user.getLogin(), coins);
+				activityService.add(user.getLogin(), coins, "Coin Toss");
 				model.addAttribute("result", "You won " + coins + "coins" );
 			}
 			else {
 				user = userService.addCoins(user.getLogin(), -coins);
+				activityService.add(user.getLogin(), -coins, "Coin Toss");
 				model.addAttribute("result", "You lost " + coins + "coins" );
 			}
 			
