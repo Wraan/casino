@@ -72,35 +72,131 @@
 
 	<div class="container-fluid centered">
 		<div class="row">
-			<div class="col-sm-3 col-md-2 sidebar">
-				<ul class="nav nav-sidebar">
-					<li class="active"><a href="#">Overview <span
-							class="sr-only">(current)</span></a></li>
-					<li><a href="/report">Report</a></li>
-					<li><a href="#">Analytics</a></li>
-					<li><a href="#">Export</a></li>
-				</ul>
-				<ul class="nav nav-sidebar">
-					<li><a href="">Nav item</a></li>
-					<li><a href="">Nav item again</a></li>
-					<li><a href="">One more nav</a></li>
-					<li><a href="">Another nav item</a></li>
-					<li><a href="">More navigation</a></li>
-				</ul>
-				<ul class="nav nav-sidebar">
-					<li><a href="">Nav item again</a></li>
-					<li><a href="">One more nav</a></li>
-					<li><a href="">Another nav item</a></li>
-				</ul>
+			<div style="bottom: 9%" class="sidebar">
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
+				<span>Wran: lel</span>
+				<br />
 			</div>
+
+			<div style="top: 91%; padding: 10px;" class="sidebar">
+				<form:form method="POST" action="/coinToss" >
+					<div class="form-group" >
+						<input style="float:right;"value="Submit" type="submit" class="btn btn-success" />
+						<input style="width:75%; float: left;" type="text" placeholder="Enter message" class="form-control"
+							   name="coins" autofocus />
+					</div>
+				</form:form>
+			</div>
+
 			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 				<h1 class="page-header">Deposit</h1>
 
-				<div class="row placeholders centered2">
-					<div class="col-xs-6 col-sm-3 placeholder">
-						<form:form method="POST" action="/deposit" class="navbar-form navbar-right">
+				<div class="row placeholders">
+					<div class="col-xs-6 col-sm-3 placeholder centered2">
+						<form:form method="POST" action="/deposit" class="centered2" style="width:20%">
 							<div class="form-group">
-								<input placeholder="Enter the amount" class="form-control" name="deposit" autofocus />
+								<input type="number" placeholder="Enter the amount" class="form-control" name="deposit" autofocus />
 							</div>
 							<input value="Deposit" type="submit" class="btn btn-success"/>
 						</form:form>
