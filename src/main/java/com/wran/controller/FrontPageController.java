@@ -38,6 +38,7 @@ public class FrontPageController {
 
 	@RequestMapping(value="/signin", method=RequestMethod.GET)
 	public String signIn(Model model) {
+		model.addAttribute("user", new User());
 		return "signin";
 	}
 	

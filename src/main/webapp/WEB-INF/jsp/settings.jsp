@@ -98,17 +98,17 @@
 							action="/changePassword" >
 							<div class="form-group ">
 								<h3>Change Password</h3>
-								<form:input placeholder="Enter old password"
+								<form:password placeholder="Enter old password"
 									class="form-control centered2" path="oldPassword"
 									style="width:15%"/>
 							</div>
 							<div class="form-group ">
-								<form:input placeholder="Enter new password"
+								<form:password placeholder="Enter new password"
 									class="form-control centered2" path="newPassword" 
 									style="width:15%" />
 							</div>
 							<div class="form-group">
-								<form:input placeholder="Re-Enter new password"
+								<form:password placeholder="Re-Enter new password"
 									class="form-control centered2" path="newRePassword" 
 									style="width:15%" />
 							</div>
