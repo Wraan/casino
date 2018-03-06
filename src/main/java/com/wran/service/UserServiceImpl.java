@@ -1,5 +1,6 @@
 package com.wran.service;
 
+import javax.servlet.http.HttpSession;
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -120,6 +121,14 @@ public class UserServiceImpl implements UserService{
 		
 		return user;
 	}
-	
+
+	public boolean isLoggedIn(HttpSession session) {
+		User user = (User) session.getAttribute("loggedUser");
+		if(user != null)
+			return true;
+		else
+			return false;
+	}
+
 
 }

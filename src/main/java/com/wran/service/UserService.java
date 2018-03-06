@@ -4,6 +4,8 @@ import com.wran.model.PasswordChanger;
 import com.wran.model.User;
 import com.wran.model.UserRegister;
 
+import javax.servlet.http.HttpSession;
+
 public interface UserService {
 	
 	User save(User user);
@@ -26,4 +28,5 @@ public interface UserService {
 
 	User addCoins(String login, int coins);
 
+    boolean isLoggedIn(HttpSession session);
 }

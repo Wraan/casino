@@ -71,39 +71,25 @@
 
 	<div class="container-fluid centered">
 		<div class="row">
-			<div class="col-sm-3 col-md-2 sidebar">
-				<ul class="nav nav-sidebar">
-					<li class="active"><a href="#">Overview <span
-							class="sr-only">(current)</span></a></li>
-					<li><a href="/report">Report</a></li>
-					<li><a href="#">Analytics</a></li>
-					<li><a href="#">Export</a></li>
-				</ul>
-				<ul class="nav nav-sidebar">
-					<li><a href="">Nav item</a></li>
-					<li><a href="">Nav item again</a></li>
-					<li><a href="">One more nav</a></li>
-					<li><a href="">Another nav item</a></li>
-					<li><a href="">More navigation</a></li>
-				</ul>
-				<ul class="nav nav-sidebar">
-					<li><a href="">Nav item again</a></li>
-					<li><a href="">One more nav</a></li>
-					<li><a href="">Another nav item</a></li>
-				</ul>
+			<div style="bottom: 9%" class="sidebar">
+				<span>Wran: lel</span>
+				<br />
+
 			</div>
 			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 				<h1 class="page-header">Coin Toss</h1>
 
-				<div class="row placeholders centered2">
-					<div class="col-xs-6 col-sm-3 placeholder">
+				<div class="row placeholders">
+					<div class="col-xs-6 col-sm-3 placeholder centered2">
 						<div>
+							<h3>Your coins: ${loggedUser.coins}</h3>
 							<form:form method="POST" action="/coinToss">
 								<h2>Red</h2>
 								<div class="form-group">
 									<input type="hidden" name="choice" value="Red" /> 
 									<input
-										type="text" placeholder="Enter amount" class="form-control"
+										type="text" placeholder="Enter amount" class="form-control centered2"
+										style="width:15%"
 										name="coins"
 										onkeypress="return event.charCode >= 48 && event.charCode <= 57"
 										autofocus />
@@ -119,7 +105,8 @@
 								<h2>Blue</h2>
 								<div class="form-group">
 									<input type="hidden" name="choice" value="Blue"> <input
-										type="text" placeholder="Enter amount" class="form-control"
+										type="text" placeholder="Enter amount" class="form-control centered2"
+										style="width:15%"
 										name="coins"
 										onkeypress="return event.charCode >= 48 && event.charCode <= 57"
 										autofocus />

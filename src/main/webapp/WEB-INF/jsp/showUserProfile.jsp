@@ -10,7 +10,7 @@
 <meta name="author" content="">
 <link rel="icon" href="../../favicon.ico">
 
-<title>Cassino - ${user.login} Profile</title>
+<title>Cassino</title>
 
 <!-- Bootstrap core CSS -->
 <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +27,7 @@
 
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-<script src="/css/ie-emulation-modes-warning.js"></script>
+<script src="/js/ie-emulation-modes-warning.js"></script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -46,7 +46,7 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="/findUser">Find User</a></li>
-							<li><a href="#">Another action</a></li>
+							<li><a href="/coinToss">Coin Toss</a></li>
 							<li><a href="#">Something else here</a></li>
 							<li role="separator" class="divider"></li>
 							<li class="dropdown-header">Nav header</li>
@@ -62,7 +62,7 @@
 						</form:form>
 					</li>
 					<li><a href="/dashboard">Dashboard</a></li>
-					<li><a href="#">Settings</a></li>
+					<li><a href="/settings">Settings</a></li>
 					<li><a href="#">${loggedUser.login}</a></li>
 					<li><a href="#">Help</a></li>
 				</ul>
@@ -72,41 +72,37 @@
 
 	<div class="container-fluid centered">
 		<div class="row">
-			<div class="col-sm-3 col-md-2 sidebar">
-				<ul class="nav nav-sidebar">
-					<li class="active"><a href="#">Overview <span
-							class="sr-only">(current)</span></a></li>
-					<li><a href="/report">Report</a></li>
-					<li><a href="#">Analytics</a></li>
-					<li><a href="#">Export</a></li>
-				</ul>
-				<ul class="nav nav-sidebar">
-					<li><a href="">Nav item</a></li>
-					<li><a href="">Nav item again</a></li>
-					<li><a href="">One more nav</a></li>
-					<li><a href="">Another nav item</a></li>
-					<li><a href="">More navigation</a></li>
-				</ul>
-				<ul class="nav nav-sidebar">
-					<li><a href="">Nav item again</a></li>
-					<li><a href="">One more nav</a></li>
-					<li><a href="">Another nav item</a></li>
-				</ul>
-			</div>
-			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-				<h1 class="page-header">Profile</h1>
+			<div style="bottom: 9%" class="sidebar">
+				<span>Wran: lel</span>
+				<br />
 
-				<div class="row placeholders centered2">
-					<div class="col-xs-6 col-sm-3 placeholder">
+			</div>
+
+			<div style="top: 91%; padding: 10px;" class="sidebar">
+				<form:form method="POST" action="/coinToss" >
+					<div class="form-group" >
+						<input style="float:right;"value="Submit" type="submit" class="btn btn-success" />
+						<input style="width:75%; float: left;" type="text" placeholder="Enter message" class="form-control"
+								name="coins" autofocus />						
+					</div>
+				</form:form>
+			</div>
+
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				<h1 class="page-header">Dashboard</h1>
+
+				<div class="row placeholders">
+					<div class="col-xs-6 col-sm-3 placeholder centered2">
 						<img
 							src="${user.avatar}"
 							width="200" height="200" class="img-responsive"
 							alt="Generic placeholder thumbnail">
 						<h4>${user.login}</h4>
-						<span class="text-muted">${user.email}</span>
+						<span class="text-muted">Coins: ${user.coins}</span>
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
 
@@ -120,10 +116,10 @@
 				|| document
 						.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
 	</script>
-	<script src="../js/bootstrap.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
 	<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-	<script src="../js/vendor/holder.min.js"></script>
+	<script src="/js/holder.min.js"></script>
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="../js/ie10-viewport-bug-workaround.js"></script>
+	<script src="/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

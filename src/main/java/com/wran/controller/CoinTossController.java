@@ -27,7 +27,10 @@ public class CoinTossController {
 	ActivityService activityService;
 	
 	@RequestMapping(value="/coinToss", method=RequestMethod.GET)
-	public String showCoinToss(Model model) {
+	public String showCoinToss(Model model, HttpSession session) {
+		if(!userService.isLoggedIn(session))
+			return "redirect:/signin";
+
 		return "coinToss";
 	}
 	

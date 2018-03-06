@@ -35,6 +35,11 @@ public class FrontPageController {
 		}
 		return "signin";
 	}
+
+	@RequestMapping(value="/signin", method=RequestMethod.GET)
+	public String signIn(Model model) {
+		return "signin";
+	}
 	
 	@RequestMapping(value="/register", method=RequestMethod.GET)
 	public String showRegister(Model model) {
@@ -48,7 +53,6 @@ public class FrontPageController {
 			model.addAttribute("user", new User());
 			return "signin";
 		}
-
 		else {
 			model.addAttribute("error", "Try again");
 			return "register";

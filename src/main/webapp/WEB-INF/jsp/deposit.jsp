@@ -58,11 +58,11 @@
 				<ul class="nav navbar-nav navbar-right">
 					<li>
 						<form:form method="GET" action="/deposit">
-							<input style="margin-top: 7px" value="Deposit" type="submit" class="btn btn-success" />
+						<input style="margin-top: 7px" value="Deposit" type="submit" class="btn btn-success" />
 						</form:form>
 					</li>
 					<li><a href="/dashboard">Dashboard</a></li>
-					<li><a href="#">Settings</a></li>
+					<li><a href="/settings">Settings</a></li>
 					<li><a href="#">${loggedUser.login}</a></li>
 					<li><a href="#">Help</a></li>
 				</ul>
@@ -75,108 +75,7 @@
 			<div style="bottom: 9%" class="sidebar">
 				<span>Wran: lel</span>
 				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
-				<span>Wran: lel</span>
-				<br />
+
 			</div>
 
 			<div style="top: 91%; padding: 10px;" class="sidebar">
@@ -184,7 +83,7 @@
 					<div class="form-group" >
 						<input style="float:right;"value="Submit" type="submit" class="btn btn-success" />
 						<input style="width:75%; float: left;" type="text" placeholder="Enter message" class="form-control"
-							   name="coins" autofocus />
+								name="coins" autofocus />						
 					</div>
 				</form:form>
 			</div>
@@ -203,6 +102,7 @@
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
 

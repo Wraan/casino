@@ -72,38 +72,22 @@
 
 	<div class="container-fluid centered">
 		<div class="row">
-			<div class="col-sm-3 col-md-2 sidebar">
-				<ul class="nav nav-sidebar">
-					<li class="active"><a href="#">Overview <span
-							class="sr-only">(current)</span></a></li>
-					<li><a href="/report">Report</a></li>
-					<li><a href="#">Analytics</a></li>
-					<li><a href="#">Export</a></li>
-				</ul>
-				<ul class="nav nav-sidebar">
-					<li><a href="">Nav item</a></li>
-					<li><a href="">Nav item again</a></li>
-					<li><a href="">One more nav</a></li>
-					<li><a href="">Another nav item</a></li>
-					<li><a href="">More navigation</a></li>
-				</ul>
-				<ul class="nav nav-sidebar">
-					<li><a href="">Nav item again</a></li>
-					<li><a href="">One more nav</a></li>
-					<li><a href="">Another nav item</a></li>
-				</ul>
+			<div style="bottom: 9%" class="sidebar">
+				<span>Wran: lel</span>
+				<br />
+
 			</div>
 			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 				<h1 class="page-header">Settings</h1>
 
-				<div class="row placeholders centered2">
-					<div class="col-sm-6 col-sm-3 placeholder">
+				<div class="row placeholders ">
+					<div class="col-sm-6 col-sm-3 placeholder centered2">
 
 						<form:form method="POST" action="/changeAvatar">
 							<div class="form-group">
 								<h3>Change avatar</h3>
-								<input placeholder="Enter avatar URL" class="form-control"
-									name="newAvatar" />
+								<input placeholder="Enter avatar URL" class="form-control centered2"
+									name="newAvatar" style="width:15%" />
 							</div>
 							<br />
 							<input value="Submit" type="submit" class="btn btn-success" />
@@ -112,18 +96,21 @@
 						
 						<form:form method="POST" modelAttribute="passwordChanger"
 							action="/changePassword" >
-							<div class="form-group">
+							<div class="form-group ">
 								<h3>Change Password</h3>
 								<form:input placeholder="Enter old password"
-									class="form-control" path="oldPassword" />
+									class="form-control centered2" path="oldPassword"
+									style="width:15%"/>
 							</div>
-							<div class="form-group">
+							<div class="form-group ">
 								<form:input placeholder="Enter new password"
-									class="form-control" path="newPassword" />
+									class="form-control centered2" path="newPassword" 
+									style="width:15%" />
 							</div>
 							<div class="form-group">
 								<form:input placeholder="Re-Enter new password"
-									class="form-control" path="newRePassword" />
+									class="form-control centered2" path="newRePassword" 
+									style="width:15%" />
 							</div>
 							<br />
 							<input value="Submit" type="submit" class="btn btn-success" />
@@ -134,12 +121,12 @@
 						<form:form method="POST" action="/changeEmail">
 							<div class="form-group">
 								<h3>Change Email</h3>
-								<input placeholder="Enter password" class="form-control"
-									name="password" />
+								<input placeholder="Enter password" class="form-control centered2"
+									name="password" style="width:15%" />
 							</div>
 							<div class="form-group">
-								<input placeholder="Enter new Email" class="form-control"
-									name="newEmail" />
+								<input placeholder="Enter new Email" class="form-control centered2"
+									name="newEmail" style="width:15%" />
 							</div>
 							<br />
 							<input value="Submit" type="submit" class="btn btn-success" />
